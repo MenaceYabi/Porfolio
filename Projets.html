@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Yohann - Porfolio  </title>
+    <link rel="stylesheet" href="asset/CSS/Projets.css">
+</head>
+<body>
+       <div class="navy">
+        <nav>
+            <h1> <span style="color: orangered;">Y</span>OHANN  </h1>
+            <ul>
+                <li><a href="index.html"> Acceuil </a></li>
+                 <li><a href="Propos.html">  A propos  </a></li>
+                  <li><a href=" Comepetences.html"> Mes Commepetences </a></li> 
+                  <li><a href="Projets.html">  Mes projets </a></li>
+                   <li><a href="Contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    
+
+            <main class="container">
+              <section class="page-title">
+                <h2>Mes Projets</h2>
+                <p style="color:#cfcfcf;margin-top:8px;text-align:center">Quelques réalisations sélectionnées — responsive et descriptif.</p>
+              </section>
+
+              <section class="projects-grid" aria-label="Liste des projets">
+                <article class="card" data-img="asset/Images/logement.jpg">
+                  <div class="card-image" style="background-image:url('asset/Images/logement.jpg')" role="img" aria-label="Logements universitaires"></div>
+                  <div class="card-body">
+                    <h3 class="card-title">Gestion des logements universitaires</h3>
+                    <p class="card-desc">Application facilitant l'attribution et la gestion des logements étudiants : réservations, inscriptions, et suivi des affectations.</p>
+                    <div class="card-actions">
+                      <button class="btn btn-see" type="button">Voir plus</button>
+                      <a class="btn secondary" href="#">Code / Détails</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card" data-img="asset/Images/projet-stocks.jpg">
+                  <div class="card-image" style="background-image:url('asset/Images/STOCKS.jpg')" role="img" aria-label="Stocks intelligents"></div>
+                  <div class="card-body">
+                    <h3 class="card-title">Gestion des stocks intelligents</h3>
+                    <p class="card-desc">Projet en C++ avec interface Qt pour gérer les stocks d'entreprise sans base de données : fichiers locaux, logique métier et interface utilisateur simple.</p>
+                    <div class="card-actions">
+                      <button class="btn btn-see" type="button">Voir plus</button>
+                      <a class="btn secondary" href="#">Code / Détails</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card" data-img="asset/Images/projet-quizz.jpg">
+                  <div class="card-image" style="background-image:url('asset/Images/GESTION\ DES\ STOCKS.jpg')" role="img" aria-label="Mboa Quizz"></div>
+                  <div class="card-body">
+                    <h3 class="card-title">MBOA QUIZZ</h3>
+                    <p class="card-desc">Application ludique valorisant la culture africaine, questionnaires, progression utilisateur et design mobile-first.</p>
+                    <div class="card-actions">
+                      <button class="btn btn-see" type="button">Voir plus</button>
+                      <a class="btn secondary" href="#">Code / Détails</a>
+                    </div>
+                  </div>
+                </article>
+              </section>
+            </main>
+
+            <!-- Modal template -->
+            <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+              <div class="modal-card" role="document">
+                <div class="modal-header">
+                  <h3 id="modalTitle">Titre du projet</h3>
+                  <button class="close-btn modal-close" aria-label="Fermer">✕</button>
+                </div>
+                <div class="modal-body">
+                  <img id="modalImg" src="" alt="Aperçu du projet">
+                  <div class="modal-content">
+                    <p id="modalText">Description complète du projet...</p>
+                    <p style="margin-top:12px;color:#bbb">Technologies : C++, Qt, MySQL, JavaScript, Flutter (selon projet)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer class="site-footer">
+                <div class="footer-container">
+                    <div class="social-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X">
+                            <!-- X / Twitter simplified SVG -->
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <title>X</title>
+                                <path d="M5.5 4.5l13 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                <path d="M18.5 4.5l-13 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="social-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <!-- Instagram simplified SVG -->
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <title>Instagram</title>
+                                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="social-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                            <!-- Discord simplified SVG -->
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <title>Discord</title>
+                                <path d="M8.5 9.5c0 1.104-.895 2-2 2s-2-.896-2-2 .895-2 2-2 2 .896 2 2zm9 0c0 1.104-.895 2-2 2s-2-.896-2-2 .895-2 2-2 2 .896 2 2z" fill="currentColor"/>
+                                <path d="M21 5s-1.5-1-4.5-1c-1.8 0-3 .6-3 .6s-.9-.4-2.2-.6C9.6 3 8 3.8 8 3.8S6.6 4 5 4c-3 0-4-1-4-1S2 6 2 9v6c0 3 2 5 2 5s2 1 5 1c3 0 6-1 6-1s3 1 6 1c3 0 5-2 5-5V9c0-3-1-4-1-4z" fill="currentColor" opacity="0.06"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer-copy">© 2025 Yohann — Tous droits réservés</p>
+            </footer>
+
+            <script src="asset/Javascript/projets.js"></script>
+        </body>
+        </html>
